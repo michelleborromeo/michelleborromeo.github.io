@@ -321,5 +321,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+const swiper = new Swiper('.testimonials-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+  },
+});
+
+
 
 })();
